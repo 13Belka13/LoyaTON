@@ -7,6 +7,7 @@
     <title>Services - Brand</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/Google-Style-Text-Input.css">
 </head>
 
 <body style="/*background: url(&quot;design.jpg&quot;);*/background-position: 0 -60px;">
@@ -31,31 +32,73 @@
                     <h3 class="fw-bold" style="font-size: 45px;">of user capabilities</h3>
                 </div>
             </div>
-            <div class="row row-cols-1 row-cols-md-2 mx-auto" style="max-width: 900px;">
-                <div class="col mb-5"><img class="rounded img-fluid shadow" src="assets/img/products/1.jpg"></div>
-                <div class="col d-md-flex align-items-md-end align-items-lg-center mb-5">
-                    <div>
-                        <h5 class="fw-bold">Lorem ipsum dolor sit&nbsp;</h5>
-                        <p class="text-muted mb-4">Erat netus est hendrerit, nullam et quis ad cras porttitor iaculis. Bibendum vulputate cras aenean.</p><button class="btn btn-primary shadow" type="button">Try</button>
-                    </div>
+            <div class="row mb-4 mb-lg-5">
+                <div class="col-md-8 col-xl-6 text-center mx-auto">
+                    <p class="fw-bold text-success mb-2" style="font-size: 31px;"><span style="color: rgb(0, 10, 255);">Registration</span></p>
                 </div>
             </div>
             <div class="row row-cols-1 row-cols-md-2 mx-auto" style="max-width: 900px;">
-                <div class="col order-md-last mb-5"><img class="rounded img-fluid shadow" src="assets/img/products/2.jpg"></div>
-                <div class="col d-md-flex align-items-md-end align-items-lg-center mb-5">
+                <div class="col mb-5">
+                    <p style="font-size: 27px;"><em>API response:&nbsp;</em></p>
+                    <p id="resp"></p>
+                    <p id="error"></p>
+                </div>
+                <div class="col d-md-flex align-items-md-end align-items-lg-center justify-content-xl-end mb-5">
                     <div>
-                        <h5 class="fw-bold">Lorem ipsum dolor sit&nbsp;</h5>
-                        <p class="text-muted mb-4">Erat netus est hendrerit, nullam et quis ad cras porttitor iaculis. Bibendum vulputate cras aenean.</p><button class="btn btn-primary shadow" type="button">Try</button>
+                        <h5 class="fw-bold">Registration</h5>
+                        <p class="text-muted mb-4">Adds a new user entity</p>
+                        <div>
+                            <h5 class="fw-bold">Email</h5><input type="text" id="emailu">
+                        </div>
+                        <div style="margin-top: 16px;">
+                            <h5 class="fw-bold">Password</h5><input type="text" id="passu">
+                        </div>
+                        <div style="margin-top: 16px;">
+                            <h5 class="fw-bold">Name</h5><input type="text" id="nameu">
+                        </div><button class="btn btn-primary shadow d-xl-flex" id="regcompu" type="button" style="margin-top: 24px;margin-bottom: 34px;">Try</button>
+                        <h5 class="fw-bold" style="font-size: 26px;">Get info about company</h5>
+                        <div style="margin-top: 16px;">
+                            <h5 class="fw-bold">Company ID</h5><input type="text" id="copmidu">
+                        </div><button class="btn btn-primary shadow d-xl-flex" id="compinfou" type="button" style="margin-top: 24px;">Try</button>
                     </div>
                 </div>
             </div>
+            <div class="row mb-4 mb-lg-5">
+                <div class="col-md-8 col-xl-6 text-center mx-auto">
+                    <p class="fw-bold text-success mb-2" style="font-size: 31px;"><span style="color: rgb(0, 10, 255);">Give rewards</span></p>
+                </div>
+            </div>
             <div class="row row-cols-1 row-cols-md-2 mx-auto" style="max-width: 900px;">
-                <div class="col mb-5"><img class="rounded img-fluid shadow" src="assets/img/products/3.jpg"></div>
-                <div class="col d-md-flex align-items-md-end align-items-lg-center mb-5">
+                <div class="col d-md-flex align-items-md-end align-items-lg-center justify-content-xl-start mb-5">
                     <div>
-                        <h5 class="fw-bold">Lorem ipsum dolor sit&nbsp;</h5>
-                        <p class="text-muted mb-4">Erat netus est hendrerit, nullam et quis ad cras porttitor iaculis. Bibendum vulputate cras aenean.</p><button class="btn btn-primary shadow" type="button">Try</button>
+                        <h5 class="fw-bold">Upload reward</h5>
+                        <p class="text-muted mb-4">Adds a new company entity</p>
+                        <div>
+                            <h5 class="fw-bold">User ID</h5><input type="text" id="rewardidu">
+                        </div>
+                        <div style="margin-top: 16px;">
+                            <h5 class="fw-bold">Reward ID</h5><input type="text" id="rewardnameu">
+                        </div><button class="btn btn-primary shadow d-xl-flex" id="createrewardu" type="button" style="margin-top: 24px;margin-bottom: 34px;">Try</button>
+                        <h5 class="fw-bold" style="font-size: 26px;"><strong>Get info about all rewards</strong></h5>
+                        <div style="margin-top: 16px;">
+                            <h5 class="fw-bold">Company ID</h5><input type="text" id="compidrewu">
+                        </div><button class="btn btn-primary shadow d-xl-flex" id="regcomp-2" type="button" style="margin-top: 24px;">Try</button>
                     </div>
+                </div>
+                <div class="col mb-5">
+                    <p id="setup-1" style="font-size: 27px;"><em>API response:&nbsp;</em></p>
+                    <p id="punchline-1"></p>
+                    <p id="error-1"></p>
+                </div>
+            </div>
+            <div class="row mb-4 mb-lg-5">
+                <div class="col-md-8 col-xl-6 text-center mx-auto">
+                    <p class="fw-bold text-success mb-2" style="font-size: 31px;"><span style="color: rgb(0, 10, 255);">Promotional campaign</span></p>
+                </div>
+            </div>
+            <div class="row mb-4 mb-lg-5" style="height: 172.5938px;">
+                <div class="col-md-8 col-xl-6 text-center mx-auto">
+                    <p class="fw-bold text-success mb-2" style="font-size: 31px;"><span style="color: rgb(0, 10, 255);">We will be right back...</span></p>
                 </div>
             </div>
         </div>
@@ -81,6 +124,7 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/api.js"></script>
+    <script src="assets/js/apiuser.js"></script>
     <script src="assets/js/bold-and-bright.js"></script>
 </body>
 
